@@ -1,0 +1,129 @@
+#navbar {
+    position:static;
+    z-index: 1000;
+    width: 100vw;
+}
+#enigmes .enigmes 
+{
+    flex-direction: column;
+    
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0 ;
+    background-image: linear-gradient(#000000, #2e2e30);;
+
+}
+
+
+#enigmes .enigmes-bottom 
+{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+
+
+#enigmes .enigmes-item
+{
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #ff0844;
+    background-size:cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#enigmes .enigmes-item::after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+    opacity: .8;
+    z-index: -1;
+}
+#enigmes .enigmes-bottom .icon {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
+}
+#enigmes .enigmes-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#enigmes a {
+    text-decoration: none;
+}
+#enigmes .ctaa 
+{
+    display: flex;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: white;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    border: 1px solid #2e2e30 ;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease ;
+    transition-property: background-color,color ;
+}
+#enigmes .ctaa:hover 
+{
+    color: white;
+    background-color: #141414;
+    
+} 
+/* end enigmes section */ 
+p{
+    position: relative;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 1.2rem;
+}
+input[type=text] 
+{
+    position: relative;
+    left:15%;
+    transform: translate(-15%);
+    border: none;
+    background-color: rgba(255, 255,255);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 6px;
+    color: #ff0844;
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+  }
+  #enigmes .enigmes-item h3 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

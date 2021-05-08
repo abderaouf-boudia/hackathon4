@@ -1,0 +1,282 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html
+{
+    
+    scroll-behavior: smooth;
+  }
+  #navbar {
+      position: absolute;
+      z-index: 1000;
+      width: 100vw;
+  }
+  .navbar  { 
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-image: linear-gradient(#000000, #2e2e30);;
+      min-height: 80px;
+  }
+  .navbar-logo
+  {
+      color : #ff0844 ;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-size: .8rem;
+      position: absolute;
+      left: 0;
+      padding-left:5%;
+  }
+  
+   .navbar-links 
+  {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  }
+  .navbar-links a.active {
+      background-color:#ff0844;
+      color: white;
+      
+    }
+  .navbar-links li {
+  
+  list-style: none;
+  }
+  
+  .navbar-links a {
+      color: white;
+      letter-spacing: 2px;
+      font-size: 1.2rem;
+      font-weight: bold;
+     text-decoration: none;
+  }
+  .navbar-links a:hover {
+      color: white;
+      background-color: #ff0844;
+  }
+  
+
+/*font*/
+.countdown{
+    text-align: center;
+    background: #383434;
+    font-family: sans-serif;
+    font-weight: 100;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+  }
+  .titre{
+    text-align: center;
+    color: #ff0844;
+    font-weight: 100;
+    font-size: 40px;
+    position: absolute;
+    left:10%;
+    top:15%;
+  }
+ .project-info
+  {
+    background-color: white; 
+    position: absolute;
+    left:10%;
+    top:30%;
+    padding: 30px;
+    flex-basis:50%;
+    background-color: #ff0844;
+    height:55%;
+    width: 30%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    align-items: flex-start;
+  
+
+}
+ .project-info h1
+{
+    font-size: 3rem;
+    font-weight: 500;
+    top:10%;
+}
+ .project-info h2 
+{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+label{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family:  Arial, sans-serif;
+  }
+  
+  input[type=email],input[type=text], input[type=password]{
+    position: relative;
+    border: none;
+    background-color: rgba(255, 255,255, 0.3);
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 6px;
+    color: white;
+    width: 300px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+  }
+  
+  .sinscrire{
+    position: relative;
+    margin-top: 12px;
+    transform: translate(-50%);
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.666);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 180px;
+    font-size: 20px;
+    
+  }
+  
+  input[type=submit]{
+    color: white;
+    position: inherit;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.666);
+    border-radius: 15px;
+    padding: 10px;
+    border:none;
+    width: 180px;
+    font-size: 16px;
+    text-align: center;
+    
+  }
+  
+  .connecter{
+    position: absolute;
+    left: 45%;
+    top:15%;
+    background-color: #FF0844;
+    text-align: center;
+    padding: 30px;
+    width: 40%;
+    border-radius: 20px;
+  }
+  
+  .affiche{
+    top:25%;
+    position: absolute;
+    left: 30% ;
+    transform: translate(-100%);
+    background-color: #FF0844;
+    text-align: center;
+    padding: 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  input[type=submit]:hover, .sinscrire:hover{
+    background-color: white;
+    cursor:pointer;
+    color: rgba(0, 0, 0, 1);
+  }
+  
+  a{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  
+  p{
+    position: relative;
+    text-align: center;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .line {
+    margin-top: 25px;;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.666);
+    width: 200px;
+    transform: translate(-50%);
+    left:50%;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: -5px;
+    left: 20%;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255,255, 0.1);
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgba(255, 255,255, 0.3);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color:rgba(255, 255,255, 1);
+  }
+
+  
+
+h6{
+  color: white;
+}
